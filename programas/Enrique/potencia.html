@@ -1,0 +1,41 @@
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="author" content="Enrique Alejandro García">
+		<title>Pontenciar un número</title>
+		<link rel="stylesheet" href="../../css/Principal.css">
+		<script type="text/javascript" src="java.js"></script>
+	</head>
+
+	<body>
+		<header id="cabezera">
+			<div id="logo">
+			<a href="../../Index.html" id="imagen_enlace"> <img src="../../image1.png" id="imagen_logo"> <img src="../../icono.png" id="imagen_icono"></a>
+			</div>
+		<a id="enlace_titulo" href="../../Index.html">
+			<h1 id="titulo">Programas En JavaScript</h1>
+		</a>
+		</header>
+
+		<main>
+			<h1>Potenciar un número</h1>
+			<form method="post" onsubmit="potenciar(); return false">
+				<div>
+					<label for="text">Ingrese la base:</label>
+					<input type="number" required placeholder="Base" id="base">
+				</div>
+				<div>
+					<label for="text">Ingrese el exponente:</label>
+					<input type="number" required placeholder="Exponente" id="exponente">
+				</div>
+				<button type="submit" name="button">Potenciar</button>
+			</form>
+			<p id="mostrar"></p>
+		</main>
+		<footer>
+		  <small>Todos los derechos reservados 2019© </small>
+		</footer>
+	</body>
+</html>

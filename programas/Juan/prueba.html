@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Juan José Goméz Acuña.">
+  <title>Conversor</title>
+  <script type="text/javascript" src="conversion.js"></script>
+  <link rel="stylesheet" href="../../css/Principal.css">
+</head>
+<body id="bo">
+  <header id="cabezera">
+  	<div id="logo">
+  		<a href="../../Index.html" id="imagen_enlace"> <img src="../../image1.png" id="imagen_logo"> <img src="../../icono.png" id="imagen_icono"></a>
+  	</div>
+  <a id="enlace_titulo" href="../../Index.html">
+  	<h1 id="titulo">Programas En JavaScript</h1>
+  </a>
+  </header>
+  <main>
+
+  <h1 class="t">CONVERSOR A METROS.</h1>
+  <form method="post">
+
+
+  <div >
+  <p class="textos"> Ingrese la cantidad que desea convertir.</p>
+    <label for="ft" id="l1" >Pies:</label>
+   <input id="ft" type="number" oninput="conver(); return false" placeholder="Pies...">
+  <!--<button onclick="conver(); return false">Convertir</button>-->
+<p class="textos">Metros:
+  <span id="mostrar"></p>
+</div>
+<div >
+  <label for="inc" id="l2" >Pulgadas:</label>
+ <input id="inc" type="number" oninput="convert(); return false" placeholder="Pulgadas...">
+<!--<button onclick="convert(); return false" >Convertir</button>-->
+<p class="textos">Metros:
+<span id="ver"></p>
+</div>
+  </form>
+
+</main>
+<footer>
+  <small id="f">Todos los derechos reservados 2019© </small>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Fernando Ernesto Matozo Raymundo.">
+  <link rel="stylesheet" href="../../css/Principal.css">
+	<title>Mayúsculas a Minúsculas</title>
+	<script type="text/javascript" src="funcion.js">	</script>
+</head>
+<body>
+	<header id="cabezera">
+  	<div id="logo">
+  		<a href="../../Index.html" id="imagen_enlace"> <img src="../../image1.png" id="imagen_logo"> <img src="../../icono.png" id="imagen_icono"></a>
+  	</div>
+  <a id="enlace_titulo" href="../../Index.html">
+  	<h1 id="titulo">Programas En JavaScript</h1>
+  </a>
+  </header>
+	<main>
+		<h1>Convertir de MAYÚSCULAS a minúsculas <br>y minúsculas a MAYÚSCULAS </h1>
+		<form method="post">
+			<div class="div_formulario">
+			<label> Ingrese el texto a convertir:</label>
+			<textarea class="inputGrande" type="text" id="mensaje" placeholder="Escriba el texto"> </textarea>
+
+		</div>
+		<div>
+
+			<input class="inputBoton" type="button" id="boton" onclick="convertir(1)" value="MAYÚSCULAS" />
+			<input class="inputBoton" type="button" id="boton2" onclick="convertir(2)" value="minúsculas"/>
+
+		</div>
+
+		</form>
+		<p id="mostrar"></p>
+</main>
+<footer>
+	<small>Todos los derechos reservados 2019© </small>
+</footer>
+</body>
+	</link>
+</html>

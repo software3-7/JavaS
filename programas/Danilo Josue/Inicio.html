@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" Copyright DaniloJosue(c) 2019 Copyright Holder All Rights Reserved(Todos los derechos reservados).>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Josué Danilo Pineda Castaneda.">
+  <title>Calcular Edad</title>
+  <script type="text/javascript" src="Js/funcion.js"></script>
+  <link rel="stylesheet" href="../../css/Principal.css">
+</head>
+<body>
+  <header id="cabezera">
+  	<div id="logo">
+  		<a href="../../Index.html" id="imagen_enlace"> <img src="../../image1.png" id="imagen_logo"> <img src="../../icono.png" id="imagen_icono"></a>
+  	</div>
+  <a id="enlace_titulo" href="../../Index.html">
+  	<h1 id="titulo">Programas En JavaScript</h1>
+  </a>
+  </header>
+  <main>
+
+<h1>
+  Calcular la edad a partir de la fecha de nacimiento.
+</h1>
+<section class="espacio">
+  <form method="post" onsubmit="CalcularEdad(); return false">
+    <div class="divicion">
+      <label for="name">Nombre: </label>
+      <input type="text" id="nombre"  placeholder="Nombre..." spellcheck="false"pattern="[A-Za-zñÑáéíóúÁÉÍÓÚüÜ. ]+" oninput="check_text(this);">
+    </div>
+    <div class="divicion">
+      <label for="date">Fecha de nacimiento:</label>
+      <input type="date" id="fecha" required >
+    </div>
+    <!--    //al ser el boton tipo submit no es necesario llamar la funcion con el atributo onclick, puesto
+    que ya ha sido llamada con el onsubmit en la etiqueta form...
+
+    <form method="post" onsubmit="CalcularEdad(); return false">
+     <button type="submit" name="guardar>
+          Aceptar
+        </button>
+        -->
+<button type="submit" name="guardar" onclick="CalcularEdad()">
+  Aceptar
+</button>
+  </form>
+</section>
+<section>
+  <h2 id="mostrar">
+
+  </h2>
+  <h3 id="ver">
+
+  </h3>
+</section>
+
+</main>
+<footer>
+  <small>Todos los derechos reservados 2019© </small>
+</footer>
+</body>
+</html>

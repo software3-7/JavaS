@@ -1,0 +1,35 @@
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <meta name="author" content="Billy Anderson Ortíz.">
+	  <script type="text/javascript" src="Js/funcion.js"></script>
+	  <link rel="stylesheet" href="../../css/Principal.css">
+			<title>pagina</title>
+			<script src="renta por.js" type="text/javascript"></script>
+	</head>
+<body>
+	<header id="cabezera">
+		<div id="logo">
+		<a href="../../Index.html" id="imagen_enlace"> <img src="../../image1.png" id="imagen_logo"> <img src="../../icono.png" id="imagen_icono"></a>
+		</div>
+	<a id="enlace_titulo" href="../../Index.html">
+		<h1 id="titulo">Programas En JavaScript</h1>
+	</a>
+	</header>
+	<main>
+		<h1>Descuento de renta</h1>
+		<form method="post" onsubmit="descuentoRenta(); return false">
+			<label for="text">Ingrese la cantidad: </label>
+			<input type="number" name="renta" placeholder="Renta" id="renta" required min="0">
+			<button type="submit" name="button">Descuento: </button>
+		</form>
+		<p id="mostrar"></p>
+	</main>
+	<footer>
+	  <small>Todos los derechos reservados 2019© </small>
+	</footer>
+</body>
+</style>
+	</html>

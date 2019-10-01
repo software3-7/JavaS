@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Anderson Vladimir Martínez.">
+  <link rel="stylesheet" href="../../css/Principal.css">
+  <script type="text/javascript" src="palindromo.js">
+
+  </script>
+  <title>Frase Palindromo</title>
+</head>
+<body>
+  <header id="cabezera">
+    <div id="logo">
+      <a href="../../Index.html" id="imagen_enlace"> <img src="../../image1.png" id="imagen_logo"> <img src="../../icono.png" id="imagen_icono"></a>
+    </div>
+  <a id="enlace_titulo" href="../../Index.html">
+    <h1 id="titulo">Programas En JavaScript</h1>
+  </a>
+  </header>
+<main>
+  <h1>¿Quieres saber si una frase o palabra es Palindroma?</h1>
+  <section>
+    <form id="formulario" method="post" onsubmit="frasePalindromo(); return false">
+      <label for="text">Ingrese su palabra/frase:</label>
+      <input class="bloque"id="fraseUser" type="text" name="frasePalindromoVer" required placeholder="Frase/Palabra" pattern="[A-Za-z0-9ñÑáéíóúÁÉÍÓÚüÜ ]+" oninput="check_text(this);">
+      <button type="submit" name="button" >Ver</button>
+    </form>
+    <h3 id="mostrar"></h3>
+  </section>
+</main>
+<footer>
+  <small>Todos los derechos reservados 2019© </small>
+</footer>
+</main>
+</body>
+</html>
